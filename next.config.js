@@ -1,6 +1,25 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const { withTamagui } = require('@tamagui/next-plugin')
+const withPlugins = require('next-compose-plugins')
 
-module.exports = nextConfig
+module.exports = withPlugins(
+  [
+    withTamagui({
+      config: './tamagui.config.ts',
+      components: ['tamagui'],
+      excludeReactNativeWebExports: [
+        'Switch',
+        'ProgressBar',
+        'Picker',
+        'Animated',
+        'AnimatedFlatList',
+        'VirtualizedList',
+        'VirtualizedSectionList',
+        'FlatList',
+      ],
+    }),
+  ],
+  {
+    reactStrictMode: true,
+  },
+)
