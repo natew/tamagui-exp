@@ -13,13 +13,13 @@
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "tamagui": "1.0.1-beta.20"
+    "tamagui": "1.0.1-beta.21"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
-    "@tamagui/core": "1.0.1-beta.20",
-    "@tamagui/next-plugin": "1.0.1-beta.20",
-    "@tamagui/theme-base": "1.0.1-beta.20",
+    "@tamagui/core": "1.0.1-beta.21",
+    "@tamagui/next-plugin": "1.0.1-beta.21",
+    "@tamagui/theme-base": "1.0.1-beta.21",
     "@types/node": "17.0.31",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.3",
